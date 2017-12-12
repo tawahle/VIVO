@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://vivoweb.org/ontology/filegraph#"
+     xml:base="http://vivoweb.org/ontology/ApplicationConfiguration"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ApplicationConfiguration="http://vitro.mannlib.cornell.edu/ns/vitro/ApplicationConfiguration#">
+    <owl:Ontology rdf:about="http://vivoweb.org/ontology/ApplicationConfiguration">
+        <rdfs:label>The VIVO Application Configuration ontology</rdfs:label>
+        <rdfs:comment>This is an attempt to create an application configuration ontology separated from the filegraph ontology.</rdfs:comment>
+        <owl:versionIRI rdf:resource="http://vivoweb.org/ontology/filegraph/2017"/>
+    </owl:Ontology>
+    
+    <!-- http://vitro.mannlib.cornell.edu/ns/vitro/ApplicationConfiguration#addLinkSuppressed -->
+
+    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/ApplicationConfiguration#addLinkSuppressed"/>
+
+    <!-- http://vitro.mannlib.cornell.edu/ns/vitro/ApplicationConfiguration#deleteLinkSuppressed -->
+
+    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/ApplicationConfiguration#deleteLinkSuppressed"/>
+
+    <!-- http://vitro.mannlib.cornell.edu/ns/vitro/ApplicationConfiguration#editLinkSuppressed -->
+
+    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/ApplicationConfiguration#editLinkSuppressed"/>
+
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicFocusOf">
+        <ApplicationConfiguration:editLinkSuppressed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ApplicationConfiguration:editLinkSuppressed>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasResearchArea">
+        <ApplicationConfiguration:deleteLinkSuppressed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ApplicationConfiguration:deleteLinkSuppressed>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#researchAreaOf">
+        <ApplicationConfiguration:deleteLinkSuppressed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ApplicationConfiguration:deleteLinkSuppressed>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasSubjectArea">
+        <ApplicationConfiguration:deleteLinkSuppressed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ApplicationConfiguration:deleteLinkSuppressed>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#subjectAreaFor">
+        <ApplicationConfiguration:deleteLinkSuppressed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ApplicationConfiguration:deleteLinkSuppressed>
+    </owl:ObjectProperty>
+
+ <!--    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#webpageOf">
+        <ApplicationConfiguration:deleteLinkSuppressed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ApplicationConfiguration:deleteLinkSuppressed>
+        <ApplicationConfiguration:editLinkSuppressed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ApplicationConfiguration:editLinkSuppressed>
+        <ApplicationConfiguration:addLinkSuppressed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ApplicationConfiguration:addLinkSuppressed>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#webpage">
+        <ApplicationConfiguration:deleteLinkSuppressed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ApplicationConfiguration:deleteLinkSuppressed>
+    </owl:ObjectProperty> -->
+
+</rdf:RDF>
