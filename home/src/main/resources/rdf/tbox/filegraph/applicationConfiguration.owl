@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://vivoweb.org/ontology/applicationConfiguration#"
+     xml:base="http://vivoweb.org/ontology/applicationConfiguration"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vac="http://vivoweb.org/ontology/applicationConfiguration#">
+     
+    <owl:Ontology rdf:about="http://vivoweb.org/ontology/applicationConfiguration">
+        <rdfs:label xml:lang="en-US">VIVO Application Configuration Ontology</rdfs:label>
+    </owl:Ontology>
+
+    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/applicationConfiguration#addLinkSuppressed"/>
+
+    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/applicationConfiguration#deleteLinkSuppressed"/>
+
+    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/applicationConfiguration#editLinkSuppressed"/>
+
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicFocusOf">
+        <vac:editLinkSuppressed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vac:editLinkSuppressed>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasResearchArea">
+        <vac:deleteLinkSuppressed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vac:deleteLinkSuppressed>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#researchAreaOf">
+        <vac:deleteLinkSuppressed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vac:deleteLinkSuppressed>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasSubjectArea">
+        <vac:deleteLinkSuppressed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vac:deleteLinkSuppressed>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#subjectAreaFor">
+        <vac:deleteLinkSuppressed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</vac:deleteLinkSuppressed>
+    </owl:ObjectProperty>
+
+</rdf:RDF>
