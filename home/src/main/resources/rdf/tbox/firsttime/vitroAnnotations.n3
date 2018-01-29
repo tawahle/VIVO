@@ -1,17 +1,86 @@
-@prefix geo:     <http://aims.fao.org/aos/geopolitical.owl#> .
-@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
-@prefix vcard:   <http://www.w3.org/2006/vcard/ns#> .
-@prefix obo:     <http://purl.obolibrary.org/obo/> .
-@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix vitro:   <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
-@prefix event:   <http://purl.org/NET/c4dm/event.owl#> .
 @prefix bibo:    <http://purl.org/ontology/bibo/> .
-@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix event:   <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix geo:     <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
+@prefix ocrer:   <http://purl.org/net/OCRe/research.owl> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix vitro-public:  <http://vitro.mannlib.cornell.edu/ns/vitro/public#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard:   <http://www.w3.org/2006/vcard/ns#> .
+@prefix vitro:   <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix vitro-public:  <http://vitro.mannlib.cornell.edu/ns/vitro/public#> .
 @prefix vivo:    <http://vivoweb.org/ontology/core#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+bibo:
+      rdfs:label "Bibliographic Ontology"@en-US ;
+      vitro:ontologyPrefixAnnot "bibo"^^xsd:string .
+
+<http://www.w3.org/2004/02/skos/core>
+      rdfs:label "SKOS (Simple Knowledge Organization System)"@en-US ;
+      vitro:ontologyPrefixAnnot
+              "skos"^^xsd:string .
+                  
+<http://vivoweb.org/ontology/applicationConfiguration>
+      rdfs:label "VIVO Application Configuration Ontology"@en-US ;
+      vitro:ontologyPrefixAnnot "vac"^^xsd:string .
+      
+<http://vivoweb.org/ontology/core>
+      rdfs:label "VIVO Core Ontology"@en-US ;
+      vitro:ontologyPrefixAnnot "vivo"^^xsd:string .
+
+ocrer:
+      rdfs:label "OCRe Research"@en-US ;
+      vitro:ontologyPrefixAnnot "ocrer"^^xsd:string .
+      
+<http://purl.org/net/OCRe/study_design.owl>
+      rdfs:label "OCRe Study Design"@en-US ;
+      vitro:ontologyPrefixAnnot "ocresd"^^xsd:string .
+      
+<http://aims.fao.org/aos/geopolitical.owl>
+      rdfs:label "Geopolitical Ontology"@en-US ;
+      vitro:ontologyPrefixAnnot
+              "geo"^^xsd:string .
+      
+<http://purl.org/NET/c4dm/event.owl>
+      rdfs:label "Event Ontology"@en-US ;
+      vitro:ontologyPrefixAnnot
+              "event"^^xsd:string .
+
+obo:  rdfs:label "OBO Foundry"@en-US ;
+      vitro:ontologyPrefixAnnot
+              "obo"^^xsd:string .
+              
+<http://www.w3.org/2006/vcard/ns>
+      rdfs:label "VCard"@en-US ;
+      vitro:ontologyPrefixAnnot
+              "vcard"^^xsd:string .
+              
+foaf:
+      rdfs:label "FOAF (Friend of a Friend)"@en-US ;
+      vitro:ontologyPrefixAnnot
+              "foaf"^^xsd:string .
+
+<http://vivoweb.org/ontology/scientific-research>
+       rdfs:label "VIVO Scientific Research Ontology"@en-US ;
+      vitro:ontologyPrefixAnnot
+              "scires"^^xsd:string .
+
+<http://purl.org/spar/fabio/>
+       rdfs:label "FaBiO (FRBR-Aligned Bibliographic Ontology)"@en-US ;
+      vitro:ontologyPrefixAnnot
+              "fabio"^^xsd:string .
+
+<http://purl.org/spar/c4o/>
+    vitro:ontologyPrefixAnnot "c4o"^^xsd:string ;
+    rdfs:label "Citation Counting and Context Characterization Ontology"@en-US .
+
+<http://purl.org/spar/cito/>
+    vitro:ontologyPrefixAnnot "cito"^^xsd:string ;
+    rdfs:label "CiTO (Citation Typing Ontology)"@en-US .
+
 
 vivo:pmcid
       vitro:hiddenFromDisplayBelowRoleLevelAnnot
@@ -332,13 +401,6 @@ vivo:affiliatedOrganization
       vitro:selectFromExistingAnnot
               "true"^^xsd:boolean .
 
-<http://aims.fao.org/aos/geopolitical.owl>
-      vitro:ontologyPrefixAnnot
-              "geo"^^xsd:string .
-
-<http://www.w3.org/2004/02/skos/core>
-      vitro:ontologyPrefixAnnot
-              "skos"^^xsd:string .
 
 vivo:License
       vitro:displayLimitAnnot
@@ -688,9 +750,7 @@ geo:nameShortRU
       vitro:prohibitedFromUpdateBelowRoleLevelAnnot
               <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> .
 
-<http://purl.org/NET/c4dm/event.owl>
-      vitro:ontologyPrefixAnnot
-              "event"^^xsd:string .
+
 
 geo:codeISO3
       vitro:hiddenFromDisplayBelowRoleLevelAnnot
@@ -5232,23 +5292,6 @@ geo:agriculturalAreaYear
       vitro:prohibitedFromUpdateBelowRoleLevelAnnot
               <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> .
 
-<http://purl.obolibrary.org/obo/>
-      vitro:ontologyPrefixAnnot
-              "obo"^^xsd:string .
-
-<http://vivoweb.org/ontology/scientific-research>
-      vitro:ontologyPrefixAnnot
-              "scires"^^xsd:string .
-
-<http://purl.org/spar/fabio/>
-      vitro:ontologyPrefixAnnot
-              "fabio"^^xsd:string .
-
-<http://purl.org/spar/c4o/>
-    vitro:ontologyPrefixAnnot "c4o"^^xsd:string ;
-
-<http://purl.org/spar/cito/>
-    vitro:ontologyPrefixAnnot "cito"^^xsd:string ;
         
 vivo:providesFundingThrough
       vitro:displayLimitAnnot
