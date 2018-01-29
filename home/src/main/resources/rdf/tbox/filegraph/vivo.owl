@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://vivoweb.org/ontology/filegraph#"
-     xml:base="http://vivoweb.org/ontology/filegraph"
+<rdf:RDF xmlns="http://vivoweb.org/ontology/core#"
+     xml:base="http://vivoweb.org/ontology/core"
      xmlns:study_protocol="http://purl.org/net/OCRe/study_protocol.owl#"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -14,15 +14,11 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:ApplicationConfiguration="http://vitro.mannlib.cornell.edu/ns/vitro/ApplicationConfiguration#"
      xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#">
-    <owl:Ontology rdf:about="http://vivoweb.org/ontology/filegraph">
-        <rdfs:label>The VIVO ontology</rdfs:label>
-        <rdfs:comment>This is an attempt to create an ontology from the filegraph files that can be used in protege and extracted by robot.</rdfs:comment>
-        <owl:versionIRI rdf:resource="http://vivoweb.org/ontology/filegraph/2017"/>
+     
+    <owl:Ontology rdf:about="http://vivoweb.org/ontology/core">
+        <rdfs:label xml:lang="en-US">VIVO Core Ontology</rdfs:label>
     </owl:Ontology>
-    
-
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -31,8 +27,6 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-
-    
 
 
     <!-- http://aims.fao.org/aos/geopolitical.owl#sourceCreator -->
@@ -1880,7 +1874,6 @@ there is a measurement process p that has specified output m, a measurement datu
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicFocusOf">
         <rdfs:label xml:lang="en">geographic focus of</rdfs:label>
-        <ApplicationConfiguration:editLinkSuppressed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ApplicationConfiguration:editLinkSuppressed>
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#GeographicRegion"/>
     </owl:ObjectProperty>
     
@@ -2016,7 +2009,6 @@ there is a measurement process p that has specified output m, a measurement datu
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasResearchArea">
         <rdfs:label xml:lang="en">research areas</rdfs:label>
-        <ApplicationConfiguration:deleteLinkSuppressed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ApplicationConfiguration:deleteLinkSuppressed>
         <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#hasAssociatedConcept"/>
         <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#researchAreaOf"/>
     </owl:ObjectProperty>
@@ -2027,7 +2019,6 @@ there is a measurement process p that has specified output m, a measurement datu
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasSubjectArea">
         <rdfs:label xml:lang="en">has subject area</rdfs:label>
-        <ApplicationConfiguration:deleteLinkSuppressed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ApplicationConfiguration:deleteLinkSuppressed>
         <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#hasAssociatedConcept"/>
         <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#subjectAreaOf"/>
     </owl:ObjectProperty>
@@ -2191,7 +2182,6 @@ there is a measurement process p that has specified output m, a measurement datu
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#researchAreaOf">
         <rdfs:label xml:lang="en">research area of</rdfs:label>
-        <ApplicationConfiguration:deleteLinkSuppressed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ApplicationConfiguration:deleteLinkSuppressed>
         <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#conceptAssociatedWith"/>
     </owl:ObjectProperty>
     
@@ -12525,20 +12515,6 @@ see: http://xmlns.com/foaf/spec/#term_Group</obo:IAO_0000112>
         <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
     </rdf:Description>
     
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#subjectAreaFor">
-        <ApplicationConfiguration:deleteLinkSuppressed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ApplicationConfiguration:deleteLinkSuppressed>
-    </owl:ObjectProperty>
-    
-    <!-- <rdf:Description rdf:about="http://vivoweb.org/ontology/core#webpageOf">
-        <ApplicationConfiguration:deleteLinkSuppressed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ApplicationConfiguration:deleteLinkSuppressed>
-        <ApplicationConfiguration:editLinkSuppressed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ApplicationConfiguration:editLinkSuppressed>
-        <ApplicationConfiguration:addLinkSuppressed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ApplicationConfiguration:addLinkSuppressed>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#webpage">
-        <ApplicationConfiguration:deleteLinkSuppressed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ApplicationConfiguration:deleteLinkSuppressed>
-    </rdf:Description>
- -->
 </rdf:RDF>
 
 
