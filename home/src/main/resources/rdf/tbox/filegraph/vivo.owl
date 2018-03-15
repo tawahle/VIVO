@@ -12482,6 +12482,13 @@ see: http://xmlns.com/foaf/spec/#term_Group</obo:IAO_0000112>
     </owl:Class>
 
     
+	<!-- http://purl.org/cerif/frapo/SpinOffCompany -->
+	
+	<owl:Class rdf:about="http://purl.org/cerif/frapo/SpinOffCompany">
+		<rdfs:label xml:lang="en">Spin-off Company</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Company"/>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A company that has been established by a university or research institute to mature and market the results of research conducted at that research institution</rdfs:comment>
+    </owl:Class>
     
     <rdf:Description>
         <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>

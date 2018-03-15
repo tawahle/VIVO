@@ -17,6 +17,10 @@
 bibo:
       rdfs:label "Bibliographic Ontology"@en-US ;
       vitro:ontologyPrefixAnnot "bibo"^^xsd:string .
+	  
+frapo:
+      rdfs:label "The Funding, Research Administration and Projects Ontology (FRAPO)"@en-US ;
+      vitro:ontologyPrefixAnnot "frapo"^^xsd:string .	  
 
 <http://www.w3.org/2004/02/skos/core>
       rdfs:label "SKOS (Simple Knowledge Organization System)"@en-US ;
@@ -7521,5 +7525,15 @@ vivo:assignedBy
       vitro:prohibitedFromUpdateBelowRoleLevelAnnot
               <http://vitro.mannlib.cornell.edu/ns/vitro/role#nobody> .
 
-
-
+frapo:SpinOffCompany
+      vitro:displayLimitAnnot
+              "-1"^^xsd:int ;
+      vitro:displayRankAnnot
+              "-1"^^xsd:int ;
+      vitro:hiddenFromDisplayBelowRoleLevelAnnot
+              <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+      vitro:hiddenFromPublishBelowRoleLevelAnnot
+              <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+      vitro:inClassGroup <http://vivoweb.org/ontology#vitroClassGrouporganizations> ;
+      vitro:prohibitedFromUpdateBelowRoleLevelAnnot
+              <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> .	

@@ -23,5 +23,6 @@
     <owl:Ontology rdf:about="http://purl.org/spar/fabio/"/>
     <owl:Ontology rdf:about="http://purl.org/spar/c4o/"/>
     <owl:Ontology rdf:about="http://purl.org/spar/cito/"/>
+	<owl:Ontology rdf:about="http://purl.org/cerif/frapo/"/>
     
 </rdf:RDF>
